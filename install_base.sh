@@ -11,6 +11,6 @@ sudo touch /boot/ssh
 #install photo reel dependencies
 sudo apt-get install python-opencv
 
-sudo mkdir /usr/local/bin
+sudo mkdir -p /usr/local/bin
 
-sudo cp ../FreesideScreen /usr/local/bin
+sudo cp -r ../FreesideScreen /usr/local/bin
