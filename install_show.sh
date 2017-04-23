@@ -1,1 +1,1 @@
-echo "sh /usr/local/bin/FreesideScreen/run_show.sh &" >> /etc/rc.local
+sudo cp autostart_screen /etc/xdg/lxsession/LXDE/autostart
