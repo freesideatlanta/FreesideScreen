@@ -6,4 +6,4 @@ git pull &
 
 # wait until everything boots up
 sleep 8
-python /usr/local/bin/FreesideScreen/show.py
+python /usr/local/bin/FreesideScreen/orientation.py
