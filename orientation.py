@@ -25,6 +25,8 @@ cv2.setWindowProperty("main", cv2.WND_PROP_FULLSCREEN, cv2.cv.CV_WINDOW_FULLSCRE
 path = "/usr/local/bin/FreesideScreen/orientation"
 while(True):
 	try:
+		filenames = listdir(path)
+		filenames = filenames.sort(key=lambda f: int(filter(str.isdigit, f)))
 		for f in listdir(path):
 			full_path = join(path, f)
 			if not isfile(full_path):
