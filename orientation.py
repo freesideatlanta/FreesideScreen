@@ -27,7 +27,7 @@ while(True):
 	try:
 		filenames = listdir(path)
 		filenames = filenames.sort(key=lambda f: int(filter(str.isdigit, f)))
-		for f in listdir(path):
+		for f in filenames:
 			full_path = join(path, f)
 			if not isfile(full_path):
 				continue
