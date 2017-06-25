@@ -20,6 +20,9 @@ sudo rm /etc/xdg/lxsession/LXDE-pi/sshpwd.sh &
 sudo rm /etc/xdg/lxsession/LXDE/sshpwd.sh &
 
 #attempt to change the keyboard layout
+sudo cp tools/keyboard /etc/default/keyboard
 invoke-rc.d keyboard-setup start
 
-
+#Do a number of things
+#including trying again to keep the screen from blanking
+sudo cp tools/.bashrc /home/pi/.bashrc

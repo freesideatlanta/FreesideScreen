@@ -111,3 +111,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#Try again to keep the screen from blanking
+setterm -blank 0 -powerdown 0
