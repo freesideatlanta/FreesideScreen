@@ -9,4 +9,4 @@ git pull &
 
 # wait until everything boots up
 sleep 6
-python /usr/local/bin/FreesideScreen/photoreel.py /usr/local/bin/FreesideScreen/orientation
+python /usr/local/bin/FreesideScreen/photoreel.py /usr/local/bin/FreesideScreen/faq

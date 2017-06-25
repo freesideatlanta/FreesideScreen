@@ -1,4 +1,5 @@
 import cv2
+import sys
 from os import listdir
 from os.path import isfile, join
 
@@ -6,7 +7,7 @@ cv2.namedWindow("main", cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("main", cv2.WND_PROP_FULLSCREEN, cv2.cv.CV_WINDOW_FULLSCREEN)
 
 
-path = "/usr/local/bin/FreesideScreen/orientation"
+path = sys.argv[1] #"/usr/local/bin/FreesideScreen/orientation"
 while(True):
 	try:
 		filenames = listdir(path)
