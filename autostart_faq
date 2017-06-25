@@ -6,4 +6,4 @@
 @xset -dpms
 @xset s noblank
 @unclutter
-@/bin/sh /usr/local/bin/FreesideScreen/run_orientation.sh
+@/bin/sh /usr/local/bin/FreesideScreen/run_faq.sh
