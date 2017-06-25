@@ -18,3 +18,8 @@ sudo cp -r ../FreesideScreen /usr/local/bin
 #remove annoying thing asking us to change password
 sudo rm /etc/xdg/lxsession/LXDE-pi/sshpwd.sh &
 sudo rm /etc/xdg/lxsession/LXDE/sshpwd.sh &
+
+#attempt to change the keyboard layout
+invoke-rc.d keyboard-setup start
+
+
