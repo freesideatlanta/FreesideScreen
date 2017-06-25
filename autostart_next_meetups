@@ -6,4 +6,4 @@
 @xset -dpms
 @xset s noblank
 @unclutter
-@sh /usr/local/bin/FreesideScreen/run_next_meetups.sh
+@/bin/sh /usr/local/bin/FreesideScreen/run_next_meetups.sh

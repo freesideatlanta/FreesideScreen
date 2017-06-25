@@ -16,4 +16,5 @@ sudo mkdir -p /usr/local/bin
 sudo cp -r ../FreesideScreen /usr/local/bin
 
 #remove annoying thing asking us to change password
-sudo rm /etc/xdg/lxsession/LXDE-pi/sshpwd.sh
+sudo rm /etc/xdg/lxsession/LXDE-pi/sshpwd.sh &
+sudo rm /etc/xdg/lxsession/LXDE/sshpwd.sh &
