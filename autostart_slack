@@ -7,4 +7,4 @@
 @xset s noblank
 @unclutter
 @sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' ~/.config/chromium/Default/Preferences
-@chromium-browser --disable-infobars --noerrdialogs --disable-session-crashed-bubble --kiosk https://freesideatlanta.slack.com/x-173160447363-174051129031/signin
+@/bin/sh /usr/local/bin/FreesideScreen/run_slack.sh
