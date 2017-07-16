@@ -52,5 +52,7 @@ rm -f $HOME/.config/chromium/SingletonLock
 #From ref'd web page, commented
 #/usr/bin/X11/chromium-browser --kiosk $URL
 
+/bin/sleep 1
+
 #From Nathan's autostart_slack file, with leading "@" removed
 usr/bin/X11/chromium-browser --disable-infobars --noerrdialogs --disable-session-crashed-bubble --kiosk
