@@ -32,6 +32,9 @@ CrProfile="Default"
 #From ref'd web page, commented
 URL="https://freesideatlanta.slack.com/x-173160447363-174051129031/signin"
 
+#Change to user pi, since running as root will have script attempt to manage nonexistent files.
+sudo su pi
+
 #Clean up the randomly-named file(s)
 for i in $HOME/.config/chromium/.org.chromium.Chromium.*; do
     sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' $i
@@ -48,9 +51,8 @@ sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' $HOME/.config/chromiu
 #Delete SingletonLock
 rm -f $HOME/.config/chromium/SingletonLock
 
+/bin/sleep 1
+
 #From ref'd web page, commented
 /usr/bin/chromium-browser --kiosk $URL
 
-/bin/sleep 1
-
-#From Nathan's autostart_slack file, with leading "@" removed
