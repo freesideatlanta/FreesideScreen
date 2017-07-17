@@ -30,7 +30,6 @@ CrProfile="Default"
 #Set URL to the URL that you want the browser to start with
 
 #From ref'd web page, commented
-#URL="http://www.example.com"
 URL="https://freesideatlanta.slack.com/x-173160447363-174051129031/signin"
 
 #Clean up the randomly-named file(s)
@@ -50,9 +49,8 @@ sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' $HOME/.config/chromiu
 rm -f $HOME/.config/chromium/SingletonLock
 
 #From ref'd web page, commented
-#/usr/bin/X11/chromium-browser --kiosk $URL
+/usr/bin/chromium-browser --kiosk $URL
 
 /bin/sleep 1
 
 #From Nathan's autostart_slack file, with leading "@" removed
-usr/bin/X11/chromium-browser --disable-infobars --noerrdialogs --disable-session-crashed-bubble --kiosk
