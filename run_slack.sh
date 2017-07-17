@@ -33,7 +33,7 @@ CrProfile="Default"
 URL="https://freesideatlanta.slack.com/x-173160447363-174051129031/signin"
 
 #Clean up the randomly-named file(s)
-for i in $HOME/.config/chromium/$CrProfile/.org.chromium.Chromium.*; do
+for i in $HOME/.config/chromium/.org.chromium.Chromium.*; do
     sed -i 's/"exited_cleanly": false/"exited_cleanly": true/' $i
     sed -i 's/"exit_state": "Crashed"/"exit_state": "Normal"/' $i
 done
